@@ -15,9 +15,7 @@ using namespace std;
 int main()
 {
 	ifstream myfile("tai12a.dat"); // open tai12.dat file
-
 	string line;
-
 
 	if (myfile.is_open())
 	{
@@ -25,12 +23,28 @@ int main()
 		cout << "\n File is open! \n\n";	
 	}
 
-	// print file on terminal
+	int n;
+	int a;
+	myfile >> n;
+	cout << "Size of problem : " << n << '\n';
 
-	while (getline (myfile,line))
+	// print matrix based on size of problem
+	for (int i = 0; i < n; ++i)
 	{
-		cout << line << '\n';
+		for (int j = 0; j < n; ++j)
+		{
+			myfile >> a;
+			cout << a << '\t';
+		}
+		cout << '\n';
 	}
+
+	// print file on terminal
+	// while (getline (myfile,line))
+	// {
+	// 	cout << line << '\n';
+	// }
+
 
 	myfile.close(); // close file
 
