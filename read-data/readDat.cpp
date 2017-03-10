@@ -38,14 +38,7 @@ int main()
 		}
 		cout << '\n';
 	}
-
-	// print file on terminal
-	// while (getline (myfile,line))
-	// {
-	// 	cout << line << '\n';
-	// }
-
-
+	
 	myfile.close(); // close file
 
 	return 0;
