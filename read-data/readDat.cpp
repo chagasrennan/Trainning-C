@@ -8,7 +8,7 @@
 */
 
 #include <iostream>
-#include <fstream> // class to reado and writ from/to files
+#include <fstream> // class to read and write from/to files
 
 using namespace std;
 

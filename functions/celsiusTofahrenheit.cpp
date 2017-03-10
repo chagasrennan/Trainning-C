@@ -12,10 +12,8 @@
 #include <fstream> // class to reado and writ from/to files
 
 
-double ctof(double c_temp)
+double ctof(double c_temp) // double, not void, because returns a double
 {
-	double f_temp;
-	f_temp = (9*c_temp/5)+32;
 	return((9*c_temp/5)+32);
 }
 
